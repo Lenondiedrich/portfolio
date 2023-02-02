@@ -40,7 +40,6 @@ export const AboutMe = () => {
         <a className={buttonStyle} href="/curriculum.pdf" download>
           {t("aboutMe>downloadCV")}
         </a>
-        <button className={buttonStyle}>{t("aboutMe>contact")}</button>
       </div>
     </div>
   );

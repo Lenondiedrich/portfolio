@@ -66,7 +66,7 @@ export const ProjectCard = ({
 
         <Dialog.Portal>
           <Dialog.Overlay className="w-full h-full backdrop-blur-md bg-black/5 fixed inset-0" />
-          <Dialog.Content className="fixed p-10 dark:bg-zinc-900 bg-green-300 rounded-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 font-Inter">
+          <Dialog.Content className="fixed w-full p-10 dark:bg-zinc-900 bg-green-300 rounded-2xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 font-Inter">
             <Dialog.Close>
               <AiOutlineClose
                 size={24}

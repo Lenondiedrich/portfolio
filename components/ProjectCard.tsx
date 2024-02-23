@@ -19,7 +19,7 @@ export const ProjectCard = ({
       <Image
         src={preview}
         alt="Preview"
-        className="rounded-t-lg w-[512px] h-full object-cover"
+        className="rounded-t-lg w-full h-full object-cover"
         width={512}
         height={300}
       />
@@ -27,7 +27,7 @@ export const ProjectCard = ({
       <div className="p-5 border-t-2 border-black bg-portfolio-pale-mint rounded-b-lg relative h-full flex flex-col items-stretch">
         <div className="flex items-center gap-2">
           <a
-            className="bg-portfolio-sage hover:bg-portfolio-sage/80 transition-colors duration-300 p-2 rounded-lg text-portfolio-ice flex items-center gap-2"
+            className="bg-portfolio-sage hover:bg-portfolio-sage/60 transition-colors duration-300 p-2 rounded-lg text-portfolio-ice flex items-center gap-2"
             href={repo}
             target="_blank"
           >
@@ -36,7 +36,7 @@ export const ProjectCard = ({
           </a>
           {demo && (
             <a
-              className="border border-portfolio-navy hover:bg-portfolio-seafoam p-2 rounded-lg flex items-center gap-2"
+              className="border border-portfolio-navy text-portfolio-navy hover:bg-portfolio-ice/80 p-2 rounded-lg flex items-center gap-2"
               href={demo}
               target="_blank"
             >
@@ -52,7 +52,7 @@ export const ProjectCard = ({
           {description}
         </p>
 
-        <div className="flex items-end h-full gap-5 py-4">
+        <div className="flex flex-wrap items-end h-full gap-5 py-4">
           {technologies &&
             technologies.map(({ name, icon }, index) => (
               <SkillCard key={`${name}-${index}`} label={name}>

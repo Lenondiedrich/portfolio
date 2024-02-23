@@ -15,7 +15,7 @@ export const GroupSkillCard = ({
       <span className="px-10 pt-5 pb-1 bg-portfolio-ice rounded-t-lg border-t border-l border-r border-portfolio-navy text-[20px] font-roboto text-portfolio-navy font-medium">
         {title}
       </span>
-      <div className="bg-portfolio-ice rounded-b-lg border border-b-8 border-r-8 border-portfolio-navy p-5 flex items-center gap-10">
+      <div className="bg-portfolio-ice rounded-b-lg border border-b-8 border-r-8 border-portfolio-navy p-5 flex flex-col md:flex-row items-center gap-10">
         {children}
       </div>
     </div>

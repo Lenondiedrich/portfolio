@@ -10,7 +10,7 @@ export const Skills = () => {
     >
       <CurveShape />
 
-      <div className="container mx-auto pt-[250px] space-y-10">
+      <div className="container mx-auto pt-[100px] md:pt-[150px] lg:pt-[250px] px-[30px] lg:px-0 space-y-10">
         <HardSkills />
 
         <SoftSkills />

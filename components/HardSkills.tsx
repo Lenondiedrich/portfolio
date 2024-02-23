@@ -8,20 +8,20 @@ export const HardSkills = () => {
     <>
       <div className="flex items-center justify-between">
         <div className="w-full flex items-center justify-start">
-          <div className="bg-portfolio-navy size-8 rounded-full" />
+          <div className="bg-portfolio-navy size-4 lg:size-8 rounded-full" />
           <Line width="w-[80%]" />
         </div>
-        <span className="font-montserrat text-portfolio-navy text-[52px] w-full text-right">
+        <span className="font-montserrat text-portfolio-navy text-[32px] lg:text-[52px] w-full text-right">
           Hard Skills
         </span>
       </div>
 
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <GroupSkillCard title="Backend">
           <Image
             src="/images/backend.webp"
             alt="image"
-            className="size-[300px]"
+            className="size-[80%] lg:size-[300px]"
             width={300}
             height={300}
           />
@@ -39,7 +39,7 @@ export const HardSkills = () => {
           <Image
             src="/images/frontend.webp"
             alt="image"
-            className="size-[300px]"
+            className="size-[80%] lg:size-[300px]"
             width={300}
             height={300}
           />

@@ -17,22 +17,22 @@ export const Experiences = () => {
     >
       <CloudShape />
 
-      <div className="container mx-auto pt-[250px] space-y-10">
+      <div className="container mx-auto px-[30px] lg:px-0 pt-24 lg:pt-[250px] space-y-10">
         <div className="flex items-center justify-between">
-          <span className="font-montserrat text-portfolio-ice text-[52px]">
+          <span className="font-montserrat text-portfolio-ice text-[32px] lg:text-[52px]">
             Experiência
           </span>
 
           <div className="w-full flex items-center justify-end">
             <Line color="bg-portfolio-ice" width="w-[80%]" />
-            <div className="bg-portfolio-ice size-8 rounded-full" />
+            <div className="bg-portfolio-ice size-4 lg:size-8 rounded-full" />
           </div>
         </div>
 
-        <div className="grid grid-flow-col auto-cols-[minmax(0,_500px)] gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-none xl:grid-flow-col xl:auto-cols-[minmax(0,_500px)] gap-10">
           <Card.Root>
             <Card.Header rounded="right">
-              <p className="font-montserrat font-semibold text-[28px] text-portfolio-ice">
+              <p className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-ice">
                 Supera
               </p>
               <Line color="bg-portfolio-ice" width="w-1/2" />
@@ -40,19 +40,19 @@ export const Experiences = () => {
 
             <Card.Body className="-mt-[40px] pt-[60px]">
               <div className="flex flex-col items-start justify-start divide-portfolio-navy w-full space-y-2">
-                <span className="font-roboto font-semibold text-[20px] text-portfolio-navy">
+                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy">
                   Desenvolvedor Fullstack Júnior
                 </span>
 
                 <div className="flex items-center gap-2">
                   <CalendarDays color="#1A2F4B" />
-                  <span className="font-roboto font-light text-portfolio-navy text-[20px]">
+                  <span className="font-roboto font-light text-portfolio-navy text-[18px] lg:text-[20px]">
                     Jul/2021 - Fev/2022
                   </span>
                 </div>
               </div>
 
-              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[20px]">
+              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[18px] lg:text-[20px]">
                 Trabalhei em vários projetos, sendo os principais:
                 <br />
                 - Um site para compra e venda de carros em que é possível
@@ -68,7 +68,7 @@ export const Experiences = () => {
               </p>
 
               <div className="size-full flex flex-col justify-end">
-                <span className="font-roboto font-light text-[24px] text-portfolio-navy">
+                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy">
                   Tecnologias:
                 </span>
                 <div className="flex">
@@ -83,26 +83,26 @@ export const Experiences = () => {
           <Card.Root>
             <Card.Header>
               <Line color="bg-portfolio-ice" width="w-1/2" />
-              <span className="font-montserrat font-semibold text-[28px] text-portfolio-ice px-5">
+              <span className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-ice px-5">
                 W3block
               </span>
               <Line color="bg-portfolio-ice" width="w-1/2" />
             </Card.Header>
             <Card.Body className="-mt-10 pt-16 h-full">
               <div className="flex flex-col gap-2 items-start justify-start w-full">
-                <span className="font-roboto font-semibold text-[20px] text-portfolio-navy">
+                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy">
                   Desenvolvedor de Software
                 </span>
 
                 <div className="flex items-center gap-2">
                   <CalendarDays color="#1A2F4B" />
-                  <span className="font-roboto font-light text-portfolio-navy text-[20px]">
+                  <span className="font-roboto font-light text-portfolio-navy text-[18px] lg:text-[20px]">
                     Fev/2022 - Dez/2022
                   </span>
                 </div>
               </div>
 
-              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[20px]">
+              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[18px] lg:text-[20px]">
                 Trabalhei em 3 principais projetos, sendo eles: <br />
                 <strong>Tropix</strong> - Um marketplace de obras de artes,
                 sendo registrados em um NFT e negociados via criptomoedas.
@@ -116,7 +116,7 @@ export const Experiences = () => {
               </p>
 
               <div className="flex flex-col size-full justify-end">
-                <span className="font-roboto font-light text-[24px] text-portfolio-navy">
+                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy">
                   Tecnologias:
                 </span>
                 <div className="flex">
@@ -131,26 +131,26 @@ export const Experiences = () => {
           <Card.Root>
             <Card.Header rounded="left">
               <Line color="bg-portfolio-ice" width="w-1/2" />
-              <p className="font-montserrat font-semibold text-[28px] text-portfolio-ice">
+              <p className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-ice">
                 netspaces
               </p>
             </Card.Header>
 
             <Card.Body className="-mt-[40px] pt-[60px] h-full">
               <div className="flex flex-col items-start justify-start divide-portfolio-navy w-full space-y-2">
-                <span className="font-roboto font-semibold text-[20px] text-portfolio-navy">
+                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy">
                   Desenvolvedor frontend pleno
                 </span>
 
                 <div className="flex items-center gap-2">
                   <CalendarDays color="#1A2F4B" />
-                  <span className="font-roboto font-light text-portfolio-navy text-[20px]">
+                  <span className="font-roboto font-light text-portfolio-navy text-[18px] lg:text-[20px]">
                     Fev/2023 - Atual
                   </span>
                 </div>
               </div>
 
-              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[20px]">
+              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[18px] lg:text-[20px]">
                 Como Desenvolvedor Frontend Pleno, sou especializado em
                 transformar designs de UX em interfaces "pixel perfect",
                 garantindo que cada detalhe dos protótipos seja meticulosamente
@@ -162,7 +162,7 @@ export const Experiences = () => {
               </p>
 
               <div className="size-full flex flex-col justify-end">
-                <span className="font-roboto font-light text-[24px] text-portfolio-navy">
+                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy">
                   Tecnologias:
                 </span>
                 <div className="flex">

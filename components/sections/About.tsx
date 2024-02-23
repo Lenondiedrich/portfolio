@@ -15,30 +15,30 @@ export const About = () => {
         alt="image"
         height={600}
         width={600}
-        className="rounded-s-full absolute top-[150px] right-0 animate-slide-left transition-transform -mr-[1000px]"
+        className="rounded-s-full absolute lg:animate-slide-left transition-transform top-[280px] lg:top-[150px] right-0 lg:-mr-[1000px] size-[350px] lg:size-[400px] xl:size-[600px]"
       />
 
-      <div className="container mx-auto">
-        <h1 className="font-montserrat font-semibold text-[52px] text-portfolio-sage leading-none">
+      <div className="container mx-auto px-[30px]">
+        <h1 className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-sage leading-none">
           Olá!
         </h1>
-        <h1 className="font-montserrat font-semibold text-[52px] text-portfolio-sage leading-tight tracking-tight">
+        <h1 className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-sage leading-tight tracking-tight">
           Me chamo Lenon e sou
           <br />
-          <div className="font-montserrat font-semibold text-[52px] text-portfolio-ice bg-gradient-to-r from-portfolio-sage to-portfolio-seafoam skew-x-12 w-[610px]">
+          <div className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-ice bg-gradient-to-r from-portfolio-sage to-portfolio-seafoam skew-x-12 w-[380px] lg:w-[610px]">
             <div className="-skew-x-12">desenvolvedor fullstack</div>
           </div>
         </h1>
 
-        <div className="w-full max-w-[620px] mt-12 relative">
+        <div className="w-full max-w-[450px] lg:max-w-[620px] mt-[450px] md:mt-12 relative">
           <div className="bg-portfolio-pale-mint w-full p-5 rounded-t-full rounded-br-full flex items-center justify-between z-20 relative">
-            <span className="font-montserrat font-semibold text-[28px] text-portfolio-deep-sky">
+            <span className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-deep-sky">
               SOBRE MIM
             </span>{" "}
             <Line width="w-1/2" />
           </div>
 
-          <div className="relative flex flex-col items-center -mt-[40px] pt-[60px] px-5 pb-5 border-x-4 border-b-8 border-portfolio-pale-mint bg-portfolio-ice shadow-xl font-roboto font-light text-portfolio-deep-sky text-[20px] z-10 space-y-10">
+          <div className="relative flex flex-col items-center -mt-[40px] pt-[60px] px-5 pb-5 border-x-4 border-b-8 border-portfolio-pale-mint bg-portfolio-ice shadow-xl font-roboto font-light text-portfolio-deep-sky text-[16px] lg:text-[20px] z-10 space-y-10">
             <p className="text-justify">
               Sou um desenvolvedor fullstack com uma trajetória iniciada aos 16
               anos, apaixonado por tecnologia e formado em{" "}

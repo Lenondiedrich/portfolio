@@ -4,16 +4,16 @@ export const SoftSkills = () => {
   return (
     <>
       <div className="flex items-center justify-between pt-10">
-        <span className="font-montserrat text-portfolio-navy text-[52px] w-full text-left">
+        <span className="font-montserrat text-portfolio-navy text-[32px] lg:text-[52px] w-full text-left">
           Soft Skills
         </span>
         <div className="w-full flex items-center justify-end">
           <Line width="w-[80%]" />
-          <div className="bg-portfolio-navy size-8 rounded-full" />
+          <div className="bg-portfolio-navy size-4 lg:size-8 rounded-full" />
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {softskills.map((skill, index) => (
           <SoftSkillCard key={skill.title} {...skill} number={index + 1} />
         ))}

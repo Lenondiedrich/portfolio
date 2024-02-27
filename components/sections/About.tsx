@@ -58,10 +58,12 @@ export const About = () => {
             </p>
 
             <div className="flex items-center justify-between size-full">
-              <Button>
-                <DownloadCloud color="#EBF3E8" />
-                Currículo
-              </Button>
+              <a href="/files/curriculum.pdf" target="_blank">
+                <Button>
+                  <DownloadCloud color="#EBF3E8" />
+                  Currículo
+                </Button>
+              </a>
               <div className="space-x-4">
                 <SocialButton href="https://github.com/Lenondiedrich">
                   <Github className="stroke-white group-hover:stroke-black transition-colors duration-300" />

@@ -10,7 +10,7 @@ interface LineProps extends ComponentProps<"div"> {
 export const Line = ({
   width = "w-full",
   height = "h-0.5",
-  color = "bg-portfolio-navy",
+  color = "bg-portfolio-navy dark:bg-portfolio-ice",
   styles = "",
   ...props
 }: LineProps) => {

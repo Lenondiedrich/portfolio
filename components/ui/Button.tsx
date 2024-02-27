@@ -10,7 +10,7 @@ interface ButtonProps extends ComponentProps<"button"> {
 export const Button = ({
   children,
   size = "w-[130px]",
-  color = "bg-portfolio-sage hover:bg-portfolio-sage/80",
+  color = "bg-portfolio-sage hover:bg-portfolio-sage/80 dark:bg-portfolio-navy dark:hover:bg-portfolio-navy/80",
   styles = "",
   ...props
 }: ButtonProps) => {

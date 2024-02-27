@@ -5,7 +5,7 @@ import { SoftSkills } from "../SoftSkills";
 export const Skills = () => {
   return (
     <section
-      className="relative bg-portfolio-pale-mint min-h-[500px] size-full pb-20"
+      className="relative bg-portfolio-pale-mint dark:bg-portfolio-ice-blue min-h-[500px] size-full pb-20"
       id="skills"
     >
       <CurveShape />

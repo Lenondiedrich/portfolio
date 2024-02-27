@@ -7,7 +7,8 @@ const body = tv({
   },
   variants: {
     color: {
-      "light-navy": "border-portfolio-navy bg-portfolio-pale-mint",
+      "light-navy":
+        "border-portfolio-navy bg-portfolio-pale-mint dark:bg-portfolio-deep-ice/50",
       "light-pale-mint": "border-portfolio-pale-mint bg-portfolio-ice",
     },
   },

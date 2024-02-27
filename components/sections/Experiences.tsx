@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import {
   netspacesSkills,
   superaSkills,
@@ -8,11 +9,23 @@ import { CloudShape } from "@/public/images/CloudShape";
 import { CalendarDays } from "lucide-react";
 import { Card } from "../Card";
 import { Line } from "../ui/Line";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export const Experiences = () => {
+  const [isDark, setIsDark] = useState(false);
+  const { theme, systemTheme } = useTheme();
+
+  useEffect(() => {
+    const isDarkMode =
+      theme === "system" ? systemTheme === "dark" : theme === "dark";
+
+    setIsDark(isDarkMode);
+  }, [theme, systemTheme]);
+
   return (
     <section
-      className="relative bg-portfolio-sage min-h-[500px] size-full pb-20"
+      className="relative bg-portfolio-sage dark:bg-portfolio-sky-blue min-h-[500px] size-full pb-20"
       id="experiences"
     >
       <CloudShape />
@@ -40,19 +53,19 @@ export const Experiences = () => {
 
             <Card.Body className="-mt-[40px] pt-[60px]">
               <div className="flex flex-col items-start justify-start divide-portfolio-navy w-full space-y-2">
-                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy">
+                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy dark:text-portfolio-ice">
                   Desenvolvedor Fullstack Júnior
                 </span>
 
                 <div className="flex items-center gap-2">
-                  <CalendarDays color="#1A2F4B" />
-                  <span className="font-roboto font-light text-portfolio-navy text-[18px] lg:text-[20px]">
+                  <CalendarDays color={isDark ? "#EBF3E8" : "#1A2F4B"} />
+                  <span className="font-roboto font-light text-portfolio-navy dark:text-portfolio-ice text-[18px] lg:text-[20px]">
                     Jul/2021 - Fev/2022
                   </span>
                 </div>
               </div>
 
-              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[18px] lg:text-[20px]">
+              <p className="text-justify font-roboto font-light text-portfolio-deep-sky dark:text-portfolio-ice text-[18px] lg:text-[20px]">
                 Trabalhei em vários projetos, sendo os principais:
                 <br />
                 - Um site para compra e venda de carros em que é possível
@@ -68,11 +81,11 @@ export const Experiences = () => {
               </p>
 
               <div className="size-full flex flex-col justify-end">
-                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy">
+                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy dark:text-portfolio-ice">
                   Tecnologias:
                 </span>
                 <div className="flex">
-                  <span className="font-roboto font-bold text-portfolio-navy text-[16px]">
+                  <span className="font-roboto font-bold text-portfolio-navy dark:text-portfolio-ice text-[16px]">
                     {superaSkills.map((item) => `${item} | `)}
                   </span>
                 </div>
@@ -83,26 +96,26 @@ export const Experiences = () => {
           <Card.Root>
             <Card.Header>
               <Line color="bg-portfolio-ice" width="w-1/2" />
-              <span className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-ice px-5">
+              <span className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-ice  px-5">
                 W3block
               </span>
               <Line color="bg-portfolio-ice" width="w-1/2" />
             </Card.Header>
             <Card.Body className="-mt-10 pt-16 h-full">
               <div className="flex flex-col gap-2 items-start justify-start w-full">
-                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy">
+                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy dark:text-portfolio-ice">
                   Desenvolvedor de Software
                 </span>
 
                 <div className="flex items-center gap-2">
-                  <CalendarDays color="#1A2F4B" />
-                  <span className="font-roboto font-light text-portfolio-navy text-[18px] lg:text-[20px]">
+                  <CalendarDays color={isDark ? "#EBF3E8" : "#1A2F4B"} />
+                  <span className="font-roboto font-light text-portfolio-navy dark:text-portfolio-ice text-[18px] lg:text-[20px]">
                     Fev/2022 - Dez/2022
                   </span>
                 </div>
               </div>
 
-              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[18px] lg:text-[20px]">
+              <p className="text-justify font-roboto font-light text-portfolio-deep-sky dark:text-portfolio-ice text-[18px] lg:text-[20px]">
                 Trabalhei em 3 principais projetos, sendo eles: <br />
                 <strong>Tropix</strong> - Um marketplace de obras de artes,
                 sendo registrados em um NFT e negociados via criptomoedas.
@@ -116,11 +129,11 @@ export const Experiences = () => {
               </p>
 
               <div className="flex flex-col size-full justify-end">
-                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy">
+                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy dark:text-portfolio-ice">
                   Tecnologias:
                 </span>
                 <div className="flex">
-                  <span className="font-roboto font-bold text-portfolio-navy text-[16px]">
+                  <span className="font-roboto font-bold text-portfolio-navy dark:text-portfolio-ice text-[16px]">
                     {weblockSkills.map((item) => `${item} | `)}
                   </span>
                 </div>
@@ -138,19 +151,19 @@ export const Experiences = () => {
 
             <Card.Body className="-mt-[40px] pt-[60px] h-full">
               <div className="flex flex-col items-start justify-start divide-portfolio-navy w-full space-y-2">
-                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy">
+                <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy dark:text-portfolio-ice">
                   Desenvolvedor frontend pleno
                 </span>
 
                 <div className="flex items-center gap-2">
-                  <CalendarDays color="#1A2F4B" />
-                  <span className="font-roboto font-light text-portfolio-navy text-[18px] lg:text-[20px]">
+                  <CalendarDays color={isDark ? "#EBF3E8" : "#1A2F4B"} />
+                  <span className="font-roboto font-light text-portfolio-navy dark:text-portfolio-ice text-[18px] lg:text-[20px]">
                     Fev/2023 - Atual
                   </span>
                 </div>
               </div>
 
-              <p className="text-justify font-roboto font-light text-portfolio-deep-sky text-[18px] lg:text-[20px]">
+              <p className="text-justify font-roboto font-light text-portfolio-deep-sky dark:text-portfolio-ice text-[18px] lg:text-[20px]">
                 Como Desenvolvedor Frontend Pleno, sou especializado em
                 transformar designs de UX em interfaces "pixel perfect",
                 garantindo que cada detalhe dos protótipos seja meticulosamente
@@ -162,11 +175,11 @@ export const Experiences = () => {
               </p>
 
               <div className="size-full flex flex-col justify-end">
-                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy">
+                <span className="font-roboto font-light text-[20px] lg:text-[24px] text-portfolio-navy dark:text-portfolio-ice">
                   Tecnologias:
                 </span>
                 <div className="flex">
-                  <span className="font-roboto font-bold text-portfolio-navy text-[16px]">
+                  <span className="font-roboto font-bold text-portfolio-navy dark:text-portfolio-ice text-[16px]">
                     {netspacesSkills.map((item) => `${item} | `)}
                   </span>
                 </div>

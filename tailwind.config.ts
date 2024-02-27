@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,12 +12,16 @@ const config: Config = {
       colors: {
         'portfolio-navy': '#1A2F4B',
         'portfolio-deep-sky': '#28475C',
-        'portfolio-teal': '#2F8886',
+        'portfolio-teal': '#005B41',
         'portfolio-mint': '#84C69B', 
         'portfolio-sage': '#86A789',
         'portfolio-seafoam': '#B2C8BA',
         'portfolio-pale-mint': '#D2E3C8',
         'portfolio-ice': '#EBF3E8',
+        'portfolio-deep-ice': '#2E4374',
+        'portfolio-sky-blue': '#1F6E8C',
+        'portfolio-ice-blue': '#0A2647',
+        'portfolio-deep-seafoam': '#205295',
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

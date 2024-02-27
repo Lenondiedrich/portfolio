@@ -10,7 +10,7 @@ export const Projects = () => {
       <div className="container mx-auto px-[30px] lg:px-0 pt-[100px] lg:pt-[250px] pb-16 space-y-10">
         <div className="flex items-center gap-10">
           <Line />
-          <h2 className="font-montserrat text-[32px] lg:text-[52px] text-portfolio-navy">
+          <h2 className="font-montserrat text-[32px] lg:text-[52px] text-portfolio-navy dark:text-portfolio-ice">
             Projetos
           </h2>
           <Line />

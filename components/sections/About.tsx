@@ -19,26 +19,26 @@ export const About = () => {
       />
 
       <div className="container mx-auto px-[30px]">
-        <h1 className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-sage leading-none">
+        <h1 className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-sage dark:text-portfolio-seafoam leading-none">
           Olá!
         </h1>
-        <h1 className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-sage leading-tight tracking-tight">
+        <h1 className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-sage dark:text-portfolio-seafoam leading-tight tracking-tight">
           Me chamo Lenon e sou
           <br />
-          <div className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-ice bg-gradient-to-r from-portfolio-sage to-portfolio-seafoam skew-x-12 w-[380px] lg:w-[610px]">
+          <div className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-ice bg-gradient-to-r from-portfolio-sage dark:from-blue-700 to-portfolio-seafoam dark:to-blue-500 skew-x-12 w-[380px] lg:w-[610px]">
             <div className="-skew-x-12">desenvolvedor fullstack</div>
           </div>
         </h1>
 
         <div className="w-full max-w-[450px] lg:max-w-[620px] mt-[450px] md:mt-12 relative">
-          <div className="bg-portfolio-pale-mint w-full p-5 rounded-t-full rounded-br-full flex items-center justify-between z-20 relative">
-            <span className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-deep-sky">
+          <div className="bg-portfolio-pale-mint dark:bg-portfolio-navy w-full p-5 rounded-t-full rounded-br-full flex items-center justify-between z-20 relative">
+            <span className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-deep-sky dark:text-portfolio-ice">
               SOBRE MIM
             </span>{" "}
             <Line width="w-1/2" />
           </div>
 
-          <div className="relative flex flex-col items-center -mt-[40px] pt-[60px] px-5 pb-5 border-x-4 border-b-8 border-portfolio-pale-mint bg-portfolio-ice shadow-xl font-roboto font-light text-portfolio-deep-sky text-[16px] lg:text-[20px] z-10 space-y-10">
+          <div className="relative flex flex-col items-center -mt-[45px] pt-[60px] px-5 pb-5 border-x-4 border-b-8 border-portfolio-pale-mint dark:border-portfolio-navy bg-portfolio-ice dark:bg-portfolio-deep-ice shadow-xl font-roboto font-light text-portfolio-deep-sky dark:text-portfolio-ice text-[16px] lg:text-[20px] z-10 space-y-10">
             <p className="text-justify">
               Sou um desenvolvedor fullstack com uma trajetória iniciada aos 16
               anos, apaixonado por tecnologia e formado em{" "}
@@ -87,7 +87,7 @@ const SocialButton = ({
 }) => {
   return (
     <a href={href} target="_blank">
-      <button className="bg-portfolio-sage p-2 rounded-full hover:bg-portfolio-sage/80 duration-300 transition-colors size-10 group">
+      <button className="bg-portfolio-sage dark:bg-portfolio-navy  hover:bg-portfolio-sage/80 dark:hover:bg-portfolio-navy/80 p-2 rounded-full duration-300 transition-colors size-10 group">
         {children}
       </button>
     </a>

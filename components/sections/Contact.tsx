@@ -23,21 +23,21 @@ export const Contact = () => {
             className="size-5 lg:size-10"
             color={`${isDark ? "#EBF3E8" : "#1A2F4B"}`}
           />
-          lenon.diedrich@gmail.com
+          <span>lenon.diedrich@gmail.com</span>
         </ContactItem>
         <ContactItem>
           <Github
             className="size-5 lg:size-10"
             color={`${isDark ? "#EBF3E8" : "#1A2F4B"}`}
           />
-          LenonDiedrich
+          <span>LenonDiedrich</span>
         </ContactItem>
         <ContactItem>
           <Linkedin
             className="size-5 lg:size-10"
             color={`${isDark ? "#EBF3E8" : "#1A2F4B"}`}
           />
-          lenon-diedrich-da-silva-b1a6291b8
+          <span>lenon-diedrich-da-silva-b1a6291b8</span>
         </ContactItem>
       </div>
 

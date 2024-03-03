@@ -21,7 +21,7 @@ export const CurveShape = () => {
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"
         className="relative block w-[calc(115% + 1.3px)] h-24"
-        fill={isDark ? "#1F6E8C" : "#86A789"}
+        fill={isDark ? "#28475C" : "#EBF3E8"}
       >
         <path
           d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z"

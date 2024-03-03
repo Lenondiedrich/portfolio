@@ -11,8 +11,8 @@ export const GroupSkillCard = ({
   children: ReactNode;
 }) => {
   return (
-    <div>
-      <span className="px-10 pt-5 pb-1 bg-portfolio-ice dark:bg-portfolio-deep-seafoam rounded-t-lg border-t border-l border-r border-portfolio-navy dark:border-portfolio-mint text-[20px] font-roboto text-portfolio-navy dark:text-portfolio-ice font-medium">
+    <div className="flex flex-col items-stretch">
+      <span className="w-[60%] p-5 text-center bg-portfolio-ice dark:bg-portfolio-deep-seafoam rounded-t-lg border-t border-l border-r border-portfolio-navy dark:border-portfolio-mint text-[20px] font-roboto text-portfolio-navy dark:text-portfolio-ice font-medium">
         {title}
       </span>
       <div className="bg-portfolio-ice dark:bg-portfolio-deep-seafoam rounded-b-lg border border-b-8 border-r-8 border-portfolio-navy dark:border-portfolio-mint p-5 flex flex-col md:flex-row items-center gap-10">

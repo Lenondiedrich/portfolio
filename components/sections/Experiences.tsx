@@ -44,40 +44,36 @@ export const Experiences = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-none xl:grid-flow-col xl:auto-cols-[minmax(0,_500px)] gap-10">
           <Card.Root>
-            <Card.Header rounded="right">
+            <Card.Header rounded="left">
               <p className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-ice">
-                Supera
+                netspaces
               </p>
               <Line color="bg-portfolio-ice" width="w-1/2" />
             </Card.Header>
 
-            <Card.Body className="-mt-[40px] pt-[60px]">
+            <Card.Body className="-mt-[40px] pt-[60px] h-full">
               <div className="flex flex-col items-start justify-start divide-portfolio-navy w-full space-y-2">
                 <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy dark:text-portfolio-ice">
-                  Desenvolvedor Fullstack Júnior
+                  Desenvolvedor frontend pleno
                 </span>
 
                 <div className="flex items-center gap-2">
                   <CalendarDays color={isDark ? "#EBF3E8" : "#1A2F4B"} />
                   <span className="font-roboto font-light text-portfolio-navy dark:text-portfolio-ice text-[18px] lg:text-[20px]">
-                    Jul/2021 - Fev/2022
+                    Fev/2023 - Atual
                   </span>
                 </div>
               </div>
 
               <p className="text-justify font-roboto font-light text-portfolio-deep-sky dark:text-portfolio-ice text-[18px] lg:text-[20px]">
-                Trabalhei em vários projetos, sendo os principais:
-                <br />
-                - Um site para compra e venda de carros em que é possível
-                pesquisar, filtrar, simular financiamento e ver informações
-                sobre o veículo e a revenda. <br />
-                - Aplicação para auxiliar pessoas a encontrarem e contratarem
-                mentores. <br />
-                - Plataforma para gerenciar pagamento de entregadores de app de
-                delivery. <br />
-                - Dashboard para gerenciamento de colheita para controle de
-                produção. <br />- Sistema de parcelamento de contas via boletos
-                bancários.
+                Como Desenvolvedor Frontend Pleno, sou especializado em
+                transformar designs de UX em interfaces "pixel perfect",
+                garantindo que cada detalhe dos protótipos seja meticulosamente
+                implementado. Utilizando CSS moderno e frameworks de UI,
+                asseguro a fidelidade visual dos projetos, melhorando a estética
+                e a experiência do usuário, sem comprometer funcionalidade e
+                usabilidade. Meu trabalho estreita a colaboração com as equipes
+                de design, focando na precisão e qualidade.
               </p>
 
               <div className="size-full flex flex-col justify-end">
@@ -86,7 +82,7 @@ export const Experiences = () => {
                 </span>
                 <div className="flex">
                   <span className="font-roboto font-bold text-portfolio-navy dark:text-portfolio-ice text-[16px]">
-                    {superaSkills.map((item) => `${item} | `)}
+                    {netspacesSkills.map((item) => `${item} | `)}
                   </span>
                 </div>
               </div>
@@ -142,36 +138,40 @@ export const Experiences = () => {
           </Card.Root>
 
           <Card.Root>
-            <Card.Header rounded="left">
+            <Card.Header rounded="right">
               <Line color="bg-portfolio-ice" width="w-1/2" />
               <p className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-ice">
-                netspaces
+                Supera
               </p>
             </Card.Header>
 
-            <Card.Body className="-mt-[40px] pt-[60px] h-full">
+            <Card.Body className="-mt-[40px] pt-[60px]">
               <div className="flex flex-col items-start justify-start divide-portfolio-navy w-full space-y-2">
                 <span className="font-roboto font-semibold text-[18px] lg:text-[20px] text-portfolio-navy dark:text-portfolio-ice">
-                  Desenvolvedor frontend pleno
+                  Desenvolvedor Fullstack Júnior
                 </span>
 
                 <div className="flex items-center gap-2">
                   <CalendarDays color={isDark ? "#EBF3E8" : "#1A2F4B"} />
                   <span className="font-roboto font-light text-portfolio-navy dark:text-portfolio-ice text-[18px] lg:text-[20px]">
-                    Fev/2023 - Atual
+                    Jul/2021 - Fev/2022
                   </span>
                 </div>
               </div>
 
               <p className="text-justify font-roboto font-light text-portfolio-deep-sky dark:text-portfolio-ice text-[18px] lg:text-[20px]">
-                Como Desenvolvedor Frontend Pleno, sou especializado em
-                transformar designs de UX em interfaces "pixel perfect",
-                garantindo que cada detalhe dos protótipos seja meticulosamente
-                implementado. Utilizando CSS moderno e frameworks de UI,
-                asseguro a fidelidade visual dos projetos, melhorando a estética
-                e a experiência do usuário, sem comprometer funcionalidade e
-                usabilidade. Meu trabalho estreita a colaboração com as equipes
-                de design, focando na precisão e qualidade.
+                Trabalhei em vários projetos, sendo os principais:
+                <br />
+                - Um site para compra e venda de carros em que é possível
+                pesquisar, filtrar, simular financiamento e ver informações
+                sobre o veículo e a revenda. <br />
+                - Aplicação para auxiliar pessoas a encontrarem e contratarem
+                mentores. <br />
+                - Plataforma para gerenciar pagamento de entregadores de app de
+                delivery. <br />
+                - Dashboard para gerenciamento de colheita para controle de
+                produção. <br />- Sistema de parcelamento de contas via boletos
+                bancários.
               </p>
 
               <div className="size-full flex flex-col justify-end">
@@ -180,7 +180,7 @@ export const Experiences = () => {
                 </span>
                 <div className="flex">
                   <span className="font-roboto font-bold text-portfolio-navy dark:text-portfolio-ice text-[16px]">
-                    {netspacesSkills.map((item) => `${item} | `)}
+                    {superaSkills.map((item) => `${item} | `)}
                   </span>
                 </div>
               </div>

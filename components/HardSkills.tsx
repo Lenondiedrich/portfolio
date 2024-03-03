@@ -26,7 +26,7 @@ export const HardSkills = () => {
             height={300}
           />
 
-          <div className="grid grid-cols-3 size-full gap-10 place-items-center">
+          <div className="grid grid-cols-3 size-full gap-5r lg:gap-10 place-items-center">
             {backendSkills.map(({ name, icon: Icon }, index) => (
               <SkillCard label={name} key={`${name}-${index}`}>
                 {Icon}
@@ -44,7 +44,7 @@ export const HardSkills = () => {
             height={300}
           />
 
-          <div className="grid grid-cols-3 size-full gap-10 place-items-center">
+          <div className="grid grid-cols-3 size-full gap-5 lg:gap-10 place-items-center">
             {frontendSkills.map(({ name, icon: Icon }, index) => (
               <SkillCard label={name} key={`${name}-${index}`}>
                 {Icon}

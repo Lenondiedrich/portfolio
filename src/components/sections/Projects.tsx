@@ -1,9 +1,11 @@
-import { projects } from "@/constants/projects";
 import { TiltShape } from "@/public/images/TiltShape";
 import { ProjectCard } from "../ProjectCard";
 import { Line } from "../ui/Line";
+import { projects } from "@/src/constants/projects";
+import { useTranslations } from "next-intl";
 
 export const Projects = () => {
+  const t = useTranslations("Projects");
   return (
     <section className="relative" id="projects">
       <TiltShape />
@@ -11,7 +13,7 @@ export const Projects = () => {
         <div className="flex items-center gap-10">
           <Line />
           <h2 className="font-montserrat text-[32px] lg:text-[52px] text-portfolio-navy dark:text-portfolio-ice">
-            Projetos
+            {t("title")}
           </h2>
           <Line />
         </div>

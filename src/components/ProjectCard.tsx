@@ -1,10 +1,8 @@
-"use client";
-
-import { Project } from "@/types/cards";
 import { ExternalLink, Github } from "lucide-react";
-import { SkillCard } from "./SkillsElements";
 import Image from "next/image";
-import { useTheme } from "next-themes";
+import { SkillCard } from "./SkillsElements";
+import { Project } from "../types/cards";
+import { useTranslations } from "next-intl";
 
 export const ProjectCard = ({
   name,
@@ -14,7 +12,8 @@ export const ProjectCard = ({
   description,
   technologies,
 }: Project) => {
-  const { theme } = useTheme();
+  const t = useTranslations("Projects");
+
   return (
     <div
       key={name}
@@ -36,7 +35,7 @@ export const ProjectCard = ({
             target="_blank"
           >
             <Github />
-            Acessar repo
+            {t("repo")}
           </a>
           {demo && (
             <a
@@ -44,10 +43,8 @@ export const ProjectCard = ({
               href={demo}
               target="_blank"
             >
-              <ExternalLink
-                color={`${theme === "dark" ? "#EBF3E8" : "#1A2F4B"}`}
-              />
-              Acessar demo
+              <ExternalLink className="stroke-portfolio-navy dark:stroke-portfolio-ice" />
+              {t("demo")}
             </a>
           )}
         </div>
@@ -55,7 +52,7 @@ export const ProjectCard = ({
           {name}
         </h3>
         <p className="text-justify font-roboto font-light text-portfolio-navy dark:text-portfolio-ice text-[18px]">
-          {description}
+          {t(description)}
         </p>
 
         <div className="flex flex-wrap items-end h-full gap-5 py-4">

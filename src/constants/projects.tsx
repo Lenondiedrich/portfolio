@@ -14,14 +14,13 @@ import { SpringIcon } from "@/public/icons/SpringIcon";
 import { TailwindIcon } from "@/public/icons/TailwindIcon";
 import { TypescriptIcon } from "@/public/icons/TypescriptIcon";
 import { ViteIcon } from "@/public/icons/ViteIcon";
-import { Project } from "@/types/cards";
 import { Zap } from "lucide-react";
+import { Project } from "../types/cards";
 
 export const projects: Project[] = [
   {
     name: "DSVendas",
-    description:
-      "Projeto desenvolvido durante a Semana DevSuperior 3.0, evento organizado pela DevSuperior. O projeto consiste em uma aplicação web que exibe um dashboard a partir de dados fornecidos por um back end construído com Spring Boot.",
+    description: "dsvendas",
     repo: "https://github.com/Lenondiedrich/dsvendas",
     demo: "https://lenon-dsvendas.netlify.app/",
     preview: "/images/dsvendasDemo.gif",
@@ -46,8 +45,7 @@ export const projects: Project[] = [
   },
   {
     name: "E-sports",
-    description:
-      "Esse projeto foi desenvolvido durante uma Next Level Week, disponibilizado pela RocketSeat. O projeto consiste em publicar anúncio para encontrar um duo para sua jogatina online, selecionando o jogo e criando o anúncio.",
+    description: "esports",
     repo: "https://github.com/Lenondiedrich/nlw-esports",
     preview: "/images/esportsDemo.gif",
     technologies: [
@@ -83,8 +81,7 @@ export const projects: Project[] = [
   },
   {
     name: "Happy",
-    description:
-      "Projeto desenvolvido durante a Next Level Week 3, evento organizado pela RocketSeat. O projeto consiste em uma aplicação web que exibe orfanatos próximos a você, permitindo que você agende uma visita ou mesmo cadastrando um orfanato no mapa.",
+    description: "happy",
     preview: "/images/happyDemo.gif",
     repo: "https://github.com/Lenondiedrich/happy",
     technologies: [
@@ -112,8 +109,7 @@ export const projects: Project[] = [
   },
   {
     name: "DSDelivery",
-    description:
-      "Projeto desenvolvido na semana DevSuperior. O projeto consiste em uma aplicação de registro e entrega de pedidos.",
+    description: "dsdelivery",
     preview: "/images/dsdeliveryDemo.gif",
     repo: "https://github.com/Lenondiedrich/dsdeliver-sds2",
     demo: "https://lenondiedrichsds2.netlify.app/",
@@ -138,8 +134,7 @@ export const projects: Project[] = [
   },
   {
     name: "DSMovie",
-    description:
-      "Projeto desenvolvido durante a Semana DevSuperior 2.0, evento organizado pela DevSuperior. O projeto consiste em uma aplicação web que exibe um catálogo de filmes e séries, permitindo que o usuário avalie os filmes.",
+    description: "dsmovie",
     preview: "/images/dsmovieDemo.gif",
     repo: "https://github.com/Lenondiedrich/ds-movie",
     demo: "https://lenon-dsmovie.netlify.app/",
@@ -172,8 +167,7 @@ export const projects: Project[] = [
   },
   {
     name: "BookClub",
-    description:
-      "Este projeto foi desenvolvido como parte de uma disciplina da universidade, o objeto era construir uma aplicação do zero, criando layout, backend e frontend, além de aprender a lidar com sprints e gerenciamento de tempo através do Azure.",
+    description: "bookclub",
     preview: "/images/bookclub.png",
     repo: "https://github.com/Lenondiedrich/BookClub",
     technologies: [

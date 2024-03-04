@@ -1,0 +1,63 @@
+{
+  "Header": {
+    "about": "Sobre",
+    "experiences": "Experiência",
+    "projects": "Projetos"
+  },
+  "About": {
+    "hello": "Olá!",
+    "introduction": "Me chamo Lenon e sou",
+    "position": "desenvolvedor fullstack",
+    "about": "SOBRE MIM",
+    "description": "Sou um desenvolvedor fullstack com uma trajetória iniciada aos 16 anos, apaixonado por tecnologia e formado em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UNISINOS.<br></br><br></br>Atualmente, atuo na posição de desenvolvedor frontend pleno na netspaces, onde aplico meus conhecimentos nas tecnologias <strong>Typescript</strong>, <strong>React</strong>, e <strong>Next.js</strong>, para criar interfaces dinâmicas e responsivas.<br></br><br></br>Estou sempre em busca de novos desafios e tecnologias para aprimorar minhas capacidades e contribuir com soluções inovadoras.",
+    "resume": "Currículo"
+  },
+  "Contact": {
+    "footer": "Feito com ❤️ por Lenon"
+  },
+  "Experiences": {
+    "title": "Experiência",
+    "techs": "Tecnologias:",
+    "netspaces": {
+      "role": "Desenvolvedor frontend pleno",
+      "period": "Fev/2023 - Atual",
+      "description": "Como Desenvolvedor Frontend Pleno, sou especializado em transformar designs de UX em interfaces 'pixel perfect', garantindo que cada detalhe dos protótipos seja meticulosamente implementado. Utilizando CSS moderno e frameworks de UI, asseguro a fidelidade visual dos projetos, melhorando a estética e a experiência do usuário, sem comprometer funcionalidade e usabilidade. Meu trabalho estreita a colaboração com as equipes de design, focando na precisão e qualidade."
+    },
+    "weblock": {
+      "role": "Desenvolvedor de Software",
+      "period": "Fev/2022 - Dez/2022",
+      "description-title": "Trabalhei em 3 principais projetos, sendo eles:",
+      "description": "Trabalhei em 3 principais projetos, sendo eles: <br></br><strong>Tropix</strong> - Um marketplace de obras de artes, sendo registrados em um NFT e negociados via criptomoedas.<br></br><strong>Eventix</strong> - Uma plataforma para comprar e revendar ingressos de eventos por meio de NFT's.<br></br><strong>UI SDK</strong> - Uma biblioteca frontend com os componentes necessários para a integração de páginas com as regras de negócio da empresa."
+    },
+    "supera": {
+      "role": "Desenvolvedor Fullstack Júnior",
+      "period": "Jul/2021 - Fev/2022",
+      "description": "Trabalhei em vários projetos, sendo os principais:<br></br> - Um site para compra e venda de carros em que é possível pesquisar, filtrar, simular financiamento e ver informações sobre o veículo e a revenda. <br></br>- Aplicação para auxiliar pessoas a encontrarem e contratarem mentores. <br></br>- Plataforma para gerenciar pagamento de entregadores de app dedelivery. <br></br>- Dashboard para gerenciamento de colheita para controle deprodução. <br></br>- Sistema de parcelamento de contas via boletos bancários."
+    }
+  },
+  "Projects": {
+    "title": "Projetos",
+    "repo": "Acessar repo",
+    "demo": "Acessar demo",
+    "dsvendas": "Projeto desenvolvido durante a Semana DevSuperior 3.0, evento organizado pela DevSuperior. O projeto consiste em uma aplicação web que exibe um dashboard a partir de dados fornecidos por um back end construído com Spring Boot.",
+    "esports": "Esse projeto foi desenvolvido durante uma Next Level Week, disponibilizado pela RocketSeat. O projeto consiste em publicar anúncio para encontrar um duo para sua jogatina online, selecionando o jogo e criando o anúncio.",
+    "happy": "Projeto desenvolvido durante a Next Level Week 3, evento organizado pela RocketSeat. O projeto consiste em uma aplicação web que exibe orfanatos próximos a você, permitindo que você agende uma visita ou mesmo cadastrando um orfanato no mapa.",
+    "dsdelivery": "Projeto desenvolvido na semana DevSuperior. O projeto consiste em uma aplicação de registro e entrega de pedidos.",
+    "dsmovie": "Projeto desenvolvido durante a Semana DevSuperior 2.0, evento organizado pela DevSuperior. O projeto consiste em uma aplicação web que exibe um catálogo de filmes e séries, permitindo que o usuário avalie os filmes.",
+    "bookclub": "Este projeto foi desenvolvido como parte de uma disciplina da universidade, o objeto era construir uma aplicação do zero, criando layout, backend e frontend, além de aprender a lidar com sprints e gerenciamento de tempo através do Azure."
+  },
+  "SoftSkills": {
+    "quick-learner": {
+      "title": "Aprendizagem Rápida",
+      "description": "Tenho a capacidade de absorver novas informações e habilidades de forma eficiente e eficaz. Essa habilidade me permite enfrentar desafios desconhecidos com confiança e adaptar-me rapidamente a mudanças."
+    },
+    "communication": {
+      "title": "Comunicação",
+      "description": "Como desenvolvedor, a comunicação é uma habilidade fundamental, especialmente quando se trata de colaborar com equipes multidisciplinares. Ser eficaz na documentação de código e na utilização de ferramentas de controle de versão, como Git, facilita a colaboração com outros desenvolvedores e contribui para o sucesso dos projetos."
+    },
+    "problem-solving": {
+      "title": "Resolução de Problemas",
+      "description": "A resolução de problemas é uma habilidade que me permite identificar, analisar e resolver problemas de forma eficaz e eficiente. Isso me permite encontrar soluções para desafios complexos e contribuir com o time para uma entrega de qualidade."
+    }
+  }
+}

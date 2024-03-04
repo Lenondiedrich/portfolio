@@ -1,10 +1,9 @@
 "use client";
 
-import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
 import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/ui/Header";
-import { ThemeProvider } from "next-themes";
+import { Header } from "../components/ui/Header";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

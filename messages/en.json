@@ -1,0 +1,63 @@
+{
+  "Header": {
+    "about": "About",
+    "experiences": "Experience",
+    "projects": "Projects"
+  },
+  "About": {
+    "hello": "Hello!",
+    "introduction": "My name is Lenon and I am",
+    "position": "a fullstack developer",
+    "about": "ABOUT ME",
+    "description": "I am a fullstack developer who started my journey at 16, passionate about technology and graduated in <strong>Systems Analysis and Development</strong> from UNISINOS.<br></br><br></br>Currently, I work as a mid-level frontend developer at netspaces, where I apply my knowledge in <strong>Typescript</strong>, <strong>React</strong>, and <strong>Next.js</strong> technologies, to create dynamic and responsive interfaces.<br></br><br></br>I am always looking for new challenges and technologies to enhance my capabilities and contribute with innovative solutions.",
+    "resume": "Resume"
+  },
+  "Contact": {
+    "footer": "Made with ❤️ by Lenon"
+  },
+  "Experiences": {
+    "title": "Experience",
+    "techs": "Technologies:",
+    "netspaces": {
+      "role": "Mid-level Frontend Developer",
+      "period": "Feb/2023 - Present",
+      "description": "As a Mid-level Frontend Developer, I specialize in transforming UX designs into 'pixel perfect' interfaces, ensuring every detail of the prototypes is meticulously implemented. Using modern CSS and UI frameworks, I ensure the visual fidelity of projects, enhancing aesthetics and user experience without compromising functionality and usability. My work involves close collaboration with design teams, focusing on precision and quality."
+    },
+    "weblock": {
+      "role": "Software Developer",
+      "period": "Feb/2022 - Dec/2022",
+      "description-title": "I worked on 3 main projects, which are:",
+      "description": "I worked on 3 main projects, which are: <br></br><strong>Tropix</strong> - A marketplace for artworks, registered as an NFT and traded via cryptocurrencies.<br></br><strong>Eventix</strong> - A platform for buying and reselling event tickets through NFTs.<br></br><strong>UI SDK</strong> - A frontend library with the necessary components for integrating pages with the company's business rules."
+    },
+    "supera": {
+      "role": "Junior Fullstack Developer",
+      "period": "Jul/2021 - Feb/2022",
+      "description": "I worked on various projects, with the main ones being:<br></br> - A website for buying and selling cars where you can search, filter, simulate financing, and view information about the vehicle and the dealership. <br></br>- An application to help people find and hire mentors. <br></br>- A platform for managing payments to app delivery workers. <br></br>- A dashboard for harvest management to control production. <br></br>- A system for parceling bills through bank slips."
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "repo": "Access repo",
+    "demo": "Access demo",
+    "dsvendas": "Project developed during the DevSuperior Week 3.0, an event organized by DevSuperior. The project consists of a web application that displays a dashboard from data provided by a backend built with Spring Boot.",
+    "esports": "This project was developed during a Next Level Week, provided by RocketSeat. The project consists of publishing an ad to find a duo for your online gaming, selecting the game and creating the ad.",
+    "happy": "Project developed during the Next Level Week 3, an event organized by RocketSeat. The project consists of a web application that displays nearby orphanages, allowing you to schedule a visit or even register an orphanage on the map.",
+    "dsdelivery": "Project developed during DevSuperior Week. The project consists of an application for registering and delivering orders.",
+    "dsmovie": "Project developed during the DevSuperior Week 2.0, an event organized by DevSuperior. The project consists of a web application that displays a catalog of movies and series, allowing the user to rate the movies.",
+    "bookclub": "This project was developed as part of a university course, the goal was to build an application from scratch, creating layout, backend and frontend, as well as learning to deal with sprints and time management through Azure."
+  },
+  "SoftSkills": {
+    "quick-learner": {
+      "title": "Quick Learning",
+      "description": "I have the ability to absorb new information and skills efficiently and effectively. This skill allows me to face unknown challenges with confidence and adapt quickly to changes."
+    },
+    "communication": {
+      "title": "Communication",
+      "description": "As a developer, communication is a key skill, especially when it comes to collaborating with multidisciplinary teams. Being effective in code documentation and using version control tools like Git facilitates collaboration with other developers and contributes to the success of projects."
+    },
+    "problem-solving": {
+      "title": "Problem Solving",
+      "description": "Problem solving is a skill that allows me to identify, analyze, and solve problems effectively and efficiently. This enables me to find solutions to complex challenges and contribute to the team for a quality delivery."
+    }
+  }
+}

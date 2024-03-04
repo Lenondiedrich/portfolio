@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { GroupSkillCard, SkillCard } from "./SkillsElements";
 import { Line } from "./ui/Line";
-import { backendSkills, frontendSkills } from "@/constants/skills";
+import { backendSkills, frontendSkills } from "../constants/skills";
 
 export const HardSkills = () => {
   return (

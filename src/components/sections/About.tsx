@@ -3,8 +3,10 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import { Button } from "../ui/Button";
 import { Line } from "../ui/Line";
+import { useTranslations } from "next-intl";
 
 export const About = () => {
+  const t = useTranslations("About");
   return (
     <main
       className="size-full min-h-[800px] py-32 relative overflow-hidden"
@@ -20,48 +22,39 @@ export const About = () => {
 
       <div className="container mx-auto px-[30px]">
         <h1 className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-sage dark:text-portfolio-seafoam leading-none">
-          Olá!
+          {t("hello")}
         </h1>
         <h1 className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-sage dark:text-portfolio-seafoam leading-tight tracking-tight">
-          Me chamo Lenon e sou
+          {t("introduction")}
           <br />
           <div className="font-montserrat font-semibold text-[28px] md:text-[32px] lg:text-[52px] text-portfolio-ice bg-gradient-to-r from-portfolio-sage dark:from-blue-700 to-portfolio-seafoam dark:to-blue-500 skew-x-12 w-[380px] lg:w-[610px]">
-            <div className="-skew-x-12">desenvolvedor fullstack</div>
+            <div className="-skew-x-12">{t("position")}</div>
           </div>
         </h1>
 
         <div className="w-full max-w-[450px] lg:max-w-[620px] mt-[450px] md:mt-12 relative">
           <div className="bg-portfolio-pale-mint dark:bg-portfolio-navy w-full p-5 rounded-t-full rounded-br-full flex items-center justify-between z-20 relative">
             <span className="font-montserrat font-semibold text-[24px] lg:text-[28px] text-portfolio-deep-sky dark:text-portfolio-ice">
-              SOBRE MIM
+              {t("about")}
             </span>{" "}
             <Line width="w-1/2" />
           </div>
 
           <div className="relative flex flex-col items-center -mt-[45px] pt-[60px] px-5 pb-5 border-x-4 border-b-8 border-portfolio-pale-mint dark:border-portfolio-navy bg-portfolio-ice dark:bg-portfolio-deep-ice shadow-xl font-roboto font-light text-portfolio-deep-sky dark:text-portfolio-ice text-[16px] lg:text-[20px] z-10 space-y-10">
             <p className="text-justify">
-              Sou um desenvolvedor fullstack com uma trajetória iniciada aos 16
-              anos, apaixonado por tecnologia e formado em{" "}
-              <strong>Análise e Desenvolvimento de Sistemas</strong> pela
-              UNISINOS.
-              <br />
-              <br />
-              Atualmente, atuo na posição de desenvolvedor frontend pleno na
-              netspaces, onde aplico meus conhecimentos nas tecnologias{" "}
-              <strong>Typescript</strong>, <strong>React</strong>, e{" "}
-              <strong>Next.js</strong>, para criar interfaces dinâmicas e
-              responsivas.
-              <br />
-              <br />
-              Estou sempre em busca de novos desafios e tecnologias para
-              aprimorar minhas capacidades e contribuir com soluções inovadoras.
+              {t.rich("description", {
+                br: () => <br />,
+                strong: (children) => (
+                  <strong className="font-bold">{children}</strong>
+                ),
+              })}
             </p>
 
             <div className="flex items-center justify-between size-full">
               <a href="/files/curriculum.pdf" target="_blank">
                 <Button>
                   <DownloadCloud color="#EBF3E8" />
-                  Currículo
+                  {t("resume")}
                 </Button>
               </a>
               <div className="space-x-4">

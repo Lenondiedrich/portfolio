@@ -1,25 +1,52 @@
-import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { ReactNode } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
-export const HeaderItems = () => {
-  const t = useTranslations("Header");
+interface HeaderTranslation {
+  about: string;
+  experiences: string;
+  projects: string;
+}
+
+const NavItem = ({ href, label }: { href: string; label: string }) => (
+  <Link
+    href={href}
+    className="font-montserrat font-semibold text-portfolio-navy dark:text-portfolio-ice text-[20px] hover:underline underline-offset-[10px]"
+  >
+    {label}
+  </Link>
+);
+
+const HeaderItems = () => {
+  const asPath = usePathname();
+  const [translations, setTranslations] = useState<HeaderTranslation>();
+
+  useEffect(() => {
+    const loadTranslations = async (lang: string) => {
+      try {
+        const messages = await import(`../../../messages/${lang}.json`);
+        setTranslations(messages?.Header);
+      } catch (error) {
+        console.error("Could not load translations", error);
+        const defaultMessages = await import("../../../messages/pt.json");
+        setTranslations(defaultMessages?.Header);
+      }
+    };
+
+    const lang = asPath.startsWith("/pt") ? "pt" : "en";
+    loadTranslations(lang);
+  }, [asPath]);
   return (
     <>
-      <NavItem href="#about">{t("about")}</NavItem>
-      <NavItem href="#experiences">{t("experiences")}</NavItem>
-      <NavItem href="#projects">{t("projects")}</NavItem>
-      <NavItem href="#skills">Skills</NavItem>
+      <NavItem href="#about" label={translations?.about || "About"} />
+      <NavItem
+        href="#experiences"
+        label={translations?.experiences || "Experiences"}
+      />
+      <NavItem href="#projects" label={translations?.projects || "Projects"} />
+      <NavItem href="#skills" label="Skills" />
     </>
   );
 };
 
-const NavItem = ({ children, href }: { children: ReactNode; href: string }) => {
-  return (
-    <li className="font-montserrat font-semibold text-portfolio-navy dark:text-portfolio-ice text-[20px] hover:underline underline-offset-[10px]">
-      <Link href={href} className="scroll-smooth">
-        {children}
-      </Link>
-    </li>
-  );
-};
+export default HeaderItems;

@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta
@@ -34,9 +34,7 @@ export default function RootLayout({
         />
         <title>Portfolio - Lenon</title>
       </head>
-      <body
-        className={`${montserrat.variable} ${roboto.variable} bg-portfolio-ice dark:bg-portfolio-deep-sky`}
-      >
+      <body className={`${montserrat.variable} ${roboto.variable} bg-portfolio-ice dark:bg-portfolio-deep-sky`}>
         <ThemeProvider attribute="class">
           <Header />
           {children}

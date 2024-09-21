@@ -1,3 +1,5 @@
+"use client";
+
 import { Code } from "lucide-react";
 import { ThemeSwitch } from "../ThemeSwitch";
 

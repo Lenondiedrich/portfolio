@@ -1,38 +1,45 @@
+"use client";
+
 import clsx from "clsx";
-import { useLocale } from "next-intl";
-import { useParams } from "next/navigation";
-import { ChangeEvent, useTransition } from "react";
-import { usePathname, useRouter } from "../navigation";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
+import { ChangeEvent, useEffect, useState, useTransition } from "react";
 
-const LocaleSwitcher = () => {
-  const router = useRouter();
-  const locale = useLocale();
+export default function LocaleSwitcher() {
+  const [locale, setLocale] = useState("pt");
   const [isPending, startTransition] = useTransition();
+  const router = useRouter();
   const pathname = usePathname();
-  const params = useParams();
+
+  useEffect(() => {
+    pathname.includes("pt") ? setLocale("pt") : setLocale("en");
+  }, [pathname]);
 
   const getFlagPath = () => {
-    if (locale === "pt") {
-      return "/flags/brasil.svg";
-    } else {
-      return "/flags/usa.svg";
-    }
+    const selectedLocale = pathname.includes("pt") ? "pt" : "en";
+    return selectedLocale === "pt" ? "/flags/brasil.svg" : "/flags/usa.svg";
   };
 
-  const changeLocale = (event: ChangeEvent<HTMLSelectElement>) => {
-    const selectedLocale = event.target.value;
+  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
+    const nextLocale = event.target.value;
     startTransition(() => {
-      router.replace(
-        // @ts-expect-error -- TypeScript will validate that only known `params`
-        // are used in combination with a given `pathname`. Since the two will
-        // always match for the current route, we can skip runtime checks.
-        { pathname, params },
-        { locale: selectedLocale }
-      );
+      const getNewPath = (locale: string) => {
+        const segments = pathname.split("/");
+        const localeIndex = segments.findIndex((seg: string) => ["en", "pt"].includes(seg));
+
+        if (localeIndex !== -1) {
+          segments[localeIndex] = locale;
+        } else {
+          segments.splice(1, 0, locale);
+        }
+
+        return segments.join("/");
+      };
+
+      router.replace(getNewPath(nextLocale));
     });
-  };
+  }
 
   return (
     <label
@@ -41,22 +48,26 @@ const LocaleSwitcher = () => {
         isPending && "transition-opacity [&:disabled]:opacity-30"
       )}
     >
-      <div className="">
+      <div>
         <Image src={getFlagPath()} alt="flag image" width={40} height={15} />
-        <p className="sr-only ">{locale}</p>
+        <p className="sr-only">{locale}</p>
       </div>
       <select
         className="inline-flex appearance-none bg-transparent dark:bg-portfolio-navy py-3 pl-2 pr-6"
-        defaultValue={locale}
+        value={locale}
         disabled={isPending}
-        onChange={changeLocale}
+        onChange={onSelectChange}
       >
-        <option value="en">English</option>
-        <option value="pt">Português</option>
+        {[
+          { value: "en", label: "English" },
+          { value: "pt", label: "Português" },
+        ].map((cur) => (
+          <option key={cur.value} value={cur.value}>
+            {cur.label}
+          </option>
+        ))}
       </select>
-      <ChevronDown className="pointer-events-none" />
+      <ChevronDown />
     </label>
   );
-};
-
-export default LocaleSwitcher;
+}
